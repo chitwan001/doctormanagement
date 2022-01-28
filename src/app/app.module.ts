@@ -6,17 +6,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './MyComponents/header/header.component';
 import { SettingsComponent } from './MyComponents/settings/settings.component';
 import { HomeComponent } from './MyComponents/home/home.component';
-
+import { UsermainComponent } from './MyComponents/usermain/usermain.component';
+import { AppointmentsComponent } from './MyComponents/appointments/appointments.component';
+import { EmergencyComponent } from './MyComponents/emergency/emergency.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressBarModule} from '@angular/material/progress-bar'
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SettingsComponent,
-    HomeComponent
+    HomeComponent,
+    UsermainComponent,
+    AppointmentsComponent,
+    EmergencyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

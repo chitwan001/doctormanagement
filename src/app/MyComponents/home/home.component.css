@@ -1,0 +1,5 @@
+.mainhome{
+  display: grid;
+  grid-template-rows: 1fr 0fr 12fr;
+  height: 100%;
+}

@@ -1,1 +1,26 @@
-<p>header works!</p>
+<div class="mainheader">
+<div class="websitename">doc.net</div>
+<div class="notification">
+  <i class="material-icons">
+    notifications
+  </i>
+  <div class="noofnoti">3</div>
+</div>
+<div class="text-header" routerLink="appointments">Appointments</div>
+<div class="text-header">Buy Medicines</div>
+<div class="text-header" routerLink="emergency"> 24x7</div>
+<div class="useracc">
+  <div class="profpic">
+    <img src="/assets/profile images/user.png" alt="profile-pic">
+  </div>
+  <div class="dropdown" (click)="showoptions()">
+    <i class="material-icons">
+      expand_more
+    </i>
+  </div>
+  <div class="useroptions" id="useroptions">
+    <div class="optionscontent" routerLink="/settings">Settings</div>
+    <div class="optionscontent">Logout</div>
+  </div>
+</div>
+</div>
