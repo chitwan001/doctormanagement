@@ -9,8 +9,11 @@ import { HomeComponent } from './MyComponents/home/home.component';
 import { UsermainComponent } from './MyComponents/usermain/usermain.component';
 import { AppointmentsComponent } from './MyComponents/appointments/appointments.component';
 import { EmergencyComponent } from './MyComponents/emergency/emergency.component';
+import { LoaderComponent } from './MyComponents/loader/loader.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './interceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,15 +22,19 @@ import {MatProgressBarModule} from '@angular/material/progress-bar'
     HomeComponent,
     UsermainComponent,
     AppointmentsComponent,
-    EmergencyComponent
+    EmergencyComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {provide : HTTP_INTERCEPTORS , useClass : InterceptorService , multi : true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

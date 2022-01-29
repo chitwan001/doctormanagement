@@ -19,12 +19,24 @@
   </div>
   <div class="contentusermain">
     <div class="doctors">
+      <div class="sectionheader">DOCTORS WITH US...</div>
       <div class="alldocs">
-        <div class="inddoc">Hello</div>
-        <div class="inddoc">Hello</div>
-        <div class="inddoc">Hello</div>
-        <div class="inddoc">Hello</div>
-        <div class="inddoc">Hello</div>
+        <div class="inddoc" *ngFor="let doc of resulteddocs">
+          <div class="docimage">
+            <img src="/assets/profile images/sapledoc.jpeg" alt="">
+          </div>
+          <div class="docdesc">
+            <div class="docname">Dr. {{doc.name}}</div>
+            <div class="docquali">{{doc.qualification}}</div>
+            <div class="docspeciality">{{doc.specilization}}</div>
+            <div class="docrating">
+              <div class="ratingno">4.5</div>
+              <i class="material-icons">
+                star
+              </i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="slots"></div>

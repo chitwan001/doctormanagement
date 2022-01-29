@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetdataService } from 'src/app/getdata.service';
 
 @Component({
   selector: 'app-usermain',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsermainComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private getdoctor : GetdataService) { }
+  resulteddocs:any;
   ngOnInit(): void {
+    this.getdoctors();
   }
-
+  getdoctors(){
+    this.getdoctor.getdoctors().subscribe(data => {
+      console.log(data);
+      this.resulteddocs = data;
+    })
+  }
 }
