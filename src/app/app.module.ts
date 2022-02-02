@@ -12,8 +12,13 @@ import { EmergencyComponent } from './MyComponents/emergency/emergency.component
 import { LoaderComponent } from './MyComponents/loader/loader.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorService } from './interceptor.service';
+import { ChatbotComponent } from './MyComponents/chatbot/chatbot.component';
+import { SignupComponent } from './MyComponents/signup/signup.component';
+import { FirstlyseenComponent } from './MyComponents/firstlyseen/firstlyseen.component';
+import { MaininteractionComponent } from './MyComponents/maininteraction/maininteraction.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +28,18 @@ import { InterceptorService } from './interceptor.service';
     UsermainComponent,
     AppointmentsComponent,
     EmergencyComponent,
-    LoaderComponent
+    LoaderComponent,
+    ChatbotComponent,
+    SignupComponent,
+    FirstlyseenComponent,
+    MaininteractionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
+    MatProgressSpinnerModule,
     HttpClientModule
   ],
   providers: [

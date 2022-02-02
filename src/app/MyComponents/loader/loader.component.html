@@ -1,1 +1,3 @@
-<mat-progress-bar *ngIf="loadservice.isLoading | async" mode="indeterminate" color="warn"></mat-progress-bar>
+<div class="spinnerdiv" *ngIf="loadservice.isLoading | async">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>

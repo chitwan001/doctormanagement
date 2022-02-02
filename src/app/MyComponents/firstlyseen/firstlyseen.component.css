@@ -1,0 +1,73 @@
+/* ::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;} */
+.firstseenmain{
+  width: 101vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+.firstseenmain::-webkit-scrollbar{
+  display: none;
+}
+.horizontal-scroll-wrapper{
+    position: absolute;
+    /* background: #abc; */
+    display: flex;
+    flex-direction: row;
+    width: 150vw;
+    height: 100vh;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    gap: 3px;
+}
+.horizontal-scroll-wrapper > div{
+  display:block;
+  width: 25vw;
+  background:#cab;
+}
+.bannercontent{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000087;
+  display: grid;
+    /* align-content: end; */
+    cursor: pointer;
+}
+.mainbancontent{
+  height: 15%;
+    align-self: end;
+    display: grid;
+    transition: 1s;
+    grid-template-rows: 1fr 7fr;
+}
+.banheader{
+  text-align: left;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  font-variant-caps: petite-caps;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+.extrabancont{
+  color: white;
+  display: none;
+  padding-left: 10px;
+}
+.bannercontent:hover .mainbancontent{
+  background-color: #17183ba6;
+  height: 55vh;
+}
+.bannercontent:hover .extrabancont{
+  display: grid;
+}
+.contentsignup{
+  width: 100vw;
+  height: 100vh;
+}
