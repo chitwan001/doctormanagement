@@ -15,7 +15,7 @@ const routes: Routes = [
     {path : 'emergency' , component:EmergencyComponent}
   ]},
   {path : 'settings' , component : SettingsComponent},
-  // {path : 'signup' , component : SignupComponent},
+  {path : 'signup' , component : SignupComponent},
   {path : '' , component: FirstlyseenComponent}
 ];
 

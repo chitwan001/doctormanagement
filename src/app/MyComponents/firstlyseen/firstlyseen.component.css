@@ -1,5 +1,3 @@
-/* ::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;} */
 .firstseenmain{
   width: 101vh;
   height: 100vw;
@@ -34,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000087;
+  background-color: #00000030;
   display: grid;
     /* align-content: end; */
     cursor: pointer;
